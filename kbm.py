@@ -1,4 +1,4 @@
-from pynput.keyboard import Controller, Listener       # imports keyboard listening and the keyboard controller
+from pynput.keyboard import Controller, Listener, Key       # imports keyboard listening and the keyboard controller
 from printer import getPrompt, printPrompt          # gets quickchat printing methods
 from settings import Chat
 
@@ -30,6 +30,8 @@ class KbmQuickchat():
                 else:
                     printPrompt(self.keyboard, getPrompt(self.store, int(key.char), KbmQuickchat.QUICKCHATS), KbmQuickchat.CHATBIND)    # prints quickchat
         except:
+            if key == Key.esc:          # terminates program
+                raise KeyboardInterrupt
             return
 
     def run(self):
