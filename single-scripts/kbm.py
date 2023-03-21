@@ -30,7 +30,6 @@ import subprocess
 
 # download libaries needed
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pynput'])
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'time'])
 
 from pynput.keyboard import Controller, Listener, Key       # imports keyboard listening and the keyboard controller
 import time

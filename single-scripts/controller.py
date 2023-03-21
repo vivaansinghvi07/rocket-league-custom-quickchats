@@ -32,7 +32,6 @@ import subprocess
 # download libaries needed
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'inputs'])
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pynput'])
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'time'])
 
 from inputs import get_gamepad                  # for detecting controller on your computer
 from pynput.keyboard import Key, Controller     # for sending text
