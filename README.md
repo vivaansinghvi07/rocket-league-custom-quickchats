@@ -14,3 +14,7 @@ Custom Quickchats for the video game Rocket League!
     - If they are different, change them by searching for the `EDIT DPADS HERE` comment
   - Make sure your chat bind is accurate - if its not `t`, change it where it says `EDIT KEYBOARD CHAT BIND HERE`
 - Run the script in the background, read the directions on were the quickchats are in `settings.py`, and enjoy!
+
+Here are the chats being used in-game!
+
+![Example](example.png)
