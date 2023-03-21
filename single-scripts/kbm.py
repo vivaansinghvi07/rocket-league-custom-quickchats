@@ -24,6 +24,17 @@ class Chat():
     dpad_x = "ABS_HAT0X"    # LEFT-RIGHT
     dpad_y = "ABS_HAT0Y"    # UP-DOWN
 
+    
+
+"""""""""""""""""""""""""""""""""""""""""""""
+
+                Settings Above.
+                Code Below.
+
+"""""""""""""""""""""""""""""""""""""""""""""
+
+
+
 # allows for importing of needed libaries
 import sys
 import subprocess
