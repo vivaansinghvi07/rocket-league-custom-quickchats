@@ -1,6 +1,7 @@
 from inputs import get_gamepad                  # for detecting controller on your computer
 from pynput.keyboard import Key, Controller     # for sending text
 from settings import Chat
+from printer import getPrompt, printPrompt
 import time
 
 DPADX = Chat.dpad_x                 # code for left-right dpad
@@ -8,39 +9,13 @@ DPADY = Chat.dpad_y                 # code for up-down dpad
 CHATBIND = Chat.chatbind            # your rocket league chat binding
 QUICKCHATS = Chat.quickchats        # the quickchats used
 
-def getPrompt(store, number, quickchats):
-    return quickchats[store-1][number-1]        # returns the corresponding quickchat
-
-def printPrompt(keyboard, prompt):
-
-    # presses the chat binding
-    keyboard.press(CHATBIND)
-    keyboard.release(CHATBIND)
-
-    # waits a little to make it work
-    time.sleep(0.01)
-
-    # presses every letter
-    for letter in prompt:
-        if letter.isupper():
-            with keyboard.press(Key.shift):             # if the letter is uppercase, hold shift while doing it
-                keyboard.press(letter.lower())
-                keyboard.release(letter.lower())
-        else:                                           # otherwise print as normal
-            keyboard.press(letter)
-            keyboard.release(letter)
-            
-    # sends chat
-    keyboard.press(Key.enter)
-    keyboard.release(Key.enter)
-
 def main():
 
     # stores values - used later on
     waitForAnother = False      # defines if we need to wait for another input to enter a chat
     store = -1                  # stores the input that you pressed, so you can chat with 2 inputs
 
-    # this controls your keybaord
+    # this controls your keyboard
     keyboard = Controller()
 
     # runs program for as long as you let it - pres sCtrl 
@@ -67,7 +42,7 @@ def main():
                 if waitForAnother:      
                     store = number      # if we need to wait for another update the stored value to the number
                 else:                   
-                    printPrompt(keyboard, getPrompt(store, number, QUICKCHATS))     # otherwise, print the chat
+                    printPrompt(keyboard, getPrompt(store, number, QUICKCHATS), CHATBIND)     # otherwise, print the chat
 
 # runs the program
 main()
