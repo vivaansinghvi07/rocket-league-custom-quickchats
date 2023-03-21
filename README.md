@@ -8,7 +8,9 @@ Custom Quickchats for the video game Rocket League!
   - Not tested with PlayStation or another brand
   
 ## Usage:
-- Edit your quickchats in `prompts.py`: search for the `EDIT QUICKCHATS HERE` comment
-- Make sure your d-pads (or whatever binds) are correct with `diagnostic.py` - if they are not, change them in the `main.py` function
-  - These will be the constants `DPADX` and `DPADY`
-- Run the script in the background, read the instructions, and enjoy!
+- All edits you should need to do are in `settings.py`
+  - Edit your quickchats: search for the `EDIT QUICKCHATS HERE` comment
+  - Get the codes for your d-pads with `diagnostic.py`
+    - If they are different, change them by searching for the `EDIT DPADS HERE` comment
+  - Make sure your chat bind is accurate - if its not `t`, change it where it says `EDIT KEYBOARD CHAT BIND HERE`
+- Run the script in the background, read the directions on were the quickchats are in `settings.py`, and enjoy!
