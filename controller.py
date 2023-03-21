@@ -2,7 +2,6 @@ from inputs import get_gamepad                  # for detecting controller on yo
 from pynput.keyboard import Key, Controller     # for sending text
 from settings import Chat
 from printer import getPrompt, printPrompt
-import time
 
 DPADX = Chat.dpad_x                 # code for left-right dpad
 DPADY = Chat.dpad_y                 # code for up-down dpad
