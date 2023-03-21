@@ -8,6 +8,6 @@ def test():
     while True:                                 
         events = get_gamepad()
         for event in events:
-            print(event.code)       # prints the code of a pressed button
-
+            if event.code.strip() != "SYN_REPORT":
+                print("Code: " + event.code.strip()) # prints the code of a pressed button
 test()
