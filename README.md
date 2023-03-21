@@ -17,7 +17,9 @@ Custom Quickchats for the video game Rocket League!
   - Make sure your chat bind is accurate - if its not `t`, change it where it says `EDIT KEYBOARD CHAT BIND HERE`
 - Run the script in the background, read the directions on were the quickchats are in `settings.py`, and enjoy!
   - If you're on KBM, run `kbm.py`.
-  - If you're on controller, run `controller.py`
+    - To terminate the program, simply press `esc` on your keyboard.
+  - If you're on controller, run `controller.py`.
+    - To terminate the program, go back to your terminal and press `Ctrl+C`, or close the running process
 
 Here are the chats being used in-game!
 

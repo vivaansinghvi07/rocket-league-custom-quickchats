@@ -11,3 +11,5 @@ def test():
             if event.code.strip() != "SYN_REPORT":
                 print("Code: " + event.code.strip()) # prints the code of a pressed button
 test()
+
+# To terminate, press Ctrl+C
