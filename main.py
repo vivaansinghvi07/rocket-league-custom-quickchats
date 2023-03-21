@@ -60,7 +60,7 @@ def main():
                 code = 1 if event.code.strip() == DPADX else 0
                 
                 # creates nums from 1, 2, 3, 4 (state can be -1 a or 1)
-                number = event.state + 2 + code         
+                number = event.state + 2 + code     # 1: up, 2: left, 3: down, 4: right
 
                 if waitForAnother:          # if we need to wait for another update the stored value to the number
                     store = number
