@@ -1,11 +1,11 @@
 from inputs import get_gamepad                  # for detecting controller on your computer
 from pynput.keyboard import Key, Controller     # for sending text
-from prompts import Chat
+from settings import Chat
 import time
 
-DPADX = "ABS_HAT0X"                 # codes for d-pads
-DPADY = "ABS_HAT0Y"
-CHATBIND = "t"                      # your rocket league chat binding
+DPADX = Chat.dpad_x                 # code for left-right dpad
+DPADY = Chat.dpad_y                 # code for up-down dpad
+CHATBIND = Chat.chatbind            # your rocket league chat binding
 QUICKCHATS = Chat.quickchats        # the quickchats used
 
 def getPrompt(store, number, quickchats):
