@@ -36,12 +36,14 @@ def printPrompt(keyboard, prompt):
 
 def main():
 
-    # stores values
-    waitForAnother = False
-    store = -1
+    # stores values - used later on
+    waitForAnother = False      # defines if we need to wait for another input to enter a chat
+    store = -1                  # stores the input that you pressed, so you can chat with 2 inputs
 
-    # creates a keybaord object
+    # this controls your keybaord
     keyboard = Controller()
+
+    # runs program for as long as you let it - pres sCtrl 
     while True:
 
         # gets the gamepad plugged in
@@ -50,7 +52,7 @@ def main():
         # goes for each event
         for event in events:
 
-            # if its a dpad event (for quickchats)
+            # checks for d-pad button press
             if (event.code.strip() == DPADX or event.code.strip() == DPADY) and event.state != 0:
 
                 # makes it so that you need to click two dpads to send a chat
@@ -62,10 +64,10 @@ def main():
                 # creates nums from 1, 2, 3, 4 (state can be -1 a or 1)
                 number = event.state + 2 + code     # 1: up, 2: left, 3: down, 4: right
 
-                if waitForAnother:          # if we need to wait for another update the stored value to the number
-                    store = number
-                else:                       # otherwise, print the chat
-                    printPrompt(keyboard, getPrompt(store, number, QUICKCHATS))
+                if waitForAnother:      
+                    store = number      # if we need to wait for another update the stored value to the number
+                else:                   
+                    printPrompt(keyboard, getPrompt(store, number, QUICKCHATS))     # otherwise, print the chat
 
 # runs the program
 if __name__ == "__main__":
