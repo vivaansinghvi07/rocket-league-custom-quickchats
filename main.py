@@ -67,6 +67,6 @@ def main():
                 else:                       # otherwise, print the chat
                     printPrompt(keyboard, getPrompt(store, number, QUICKCHATS))
 
-
+# runs the program
 if __name__ == "__main__":
     main()
