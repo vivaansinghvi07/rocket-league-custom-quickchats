@@ -1,5 +1,5 @@
-### EDIT QUICKCHATS HERE
-class Chat():                                       # THE COMBINATIONS FOR THE CHATS ARE SHOWN HERE
+class Chat():
+    ### EDIT QUICKCHATS HERE                        # THE COMBINATIONS FOR THE CHATS ARE SHOWN HERE
     quickchats = [["Quickchat Placeholder 1",       # up - up 
                    "Quickchat Placeholder 2",       # up - left
                    "Quickchat Placeholder 3",       # up - down
@@ -16,3 +16,10 @@ class Chat():                                       # THE COMBINATIONS FOR THE C
                    "Quickchat Placeholder 14",      # right - left
                    "Quickchat Placeholder 15",      # right - down
                    "Quickchat Placeholder 16"]]     # right - right
+    
+    # EDIT KEYBOARD CHAT BIND HERE
+    chatbind = 't'
+
+    # EDIT DPADS HERE
+    dpad_x = "ABS_HAT0X"    # LEFT-RIGHT
+    dpad_y = "ABS_HAT0Y"    # UP-DOWN
