@@ -10,7 +10,7 @@ Custom Quickchats for the video game Rocket League!
 
 ## Setup and Usage
 
-With single scripts, all the code you need to make it work is on one file. With multi-scripts, the code is divided into several files. It is recommended that you use the single-scripts, but you can also use multi-scripts if you have an IDE and want to see the code.
+With single scripts, all the code you need to make it work is on one file. With multi-scripts, the code is divided into several files. It is recommended that you use the single-scripts, but you can also use multi-scripts if you have an IDE and want to see the code. MAKE SURE YOU HAVE YOUR INPUT DEVICE (CONTROLLER OR KEYBOARD) CONNECTED BEFORE YOU RUN THE PROGRAM.
 
 ### With Single-Scripts:
 
