@@ -70,5 +70,4 @@ def main():
                     printPrompt(keyboard, getPrompt(store, number, QUICKCHATS))     # otherwise, print the chat
 
 # runs the program
-if __name__ == "__main__":
-    main()
+main()
