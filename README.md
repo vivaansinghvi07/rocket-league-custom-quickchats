@@ -22,12 +22,12 @@ With single scripts, all the code you need to make it work is on one file. With 
 - Open the file in a text editor, such as Notepad.
   - Edit your quickchats. Search for the `EDIT QUICKCHATS HERE` comment, and edit them by replacing the placeholders with your chats. Instructions on how to use them are provided. Make sure you don't delete the quotes, and don't use quotes in your quickchats.
   - Edit your chat bind, if it's not Rocket League's default, 't'. Look for the `EDIT KEYBOARD CHAT BIND HERE` comment to do this. Once again, keep your text inside the quotes.
-  - Make sure the d-pad codes are correct. If you are not sure, download [`diagnostic.py`](https://github.com/vivaansinghvi07/rocket-league-custom-quickchats/blob/master/diagnostic.py), read the instructions, and run it by following the above steps and entering the following code into your Command Prompt (assuming it was downloaded into the Downloads folder):
+  - Make sure the d-pad codes are correct. **Note: You only need to do this is you are playing with a controller. Otherwise, the `kbm.py` program needs little adjusting (other than quickchats themselves).** If you are not sure, download [`diagnostic.py`](https://github.com/vivaansinghvi07/rocket-league-custom-quickchats/blob/master/diagnostic.py), read the instructions, and run it by following the above steps and entering the following code into your Command Prompt (assuming it was downloaded into the Downloads folder):
 
     ```
     python Downloads/diagnostic.py
     ```
-    - If your d-pad codes do not match, search for the `EDIT DPADS HERE` comment and change the codes as instructed. Note: You only need to do this is you are playing with a controller. Otherwise, the `kbm.py` program needs little adjusting (other than quickchats themselves).
+    - If your d-pad codes do not match, search for the `EDIT DPADS HERE` comment and change the codes as instructed.
 
 - When you have everything set-up, open your Command Prompt
 - Copy paste the following command, assuming you put the file in your downloads folder:
