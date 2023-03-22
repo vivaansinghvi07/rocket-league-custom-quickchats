@@ -6,9 +6,9 @@ class Chat():
                    "Quickchat Placeholder"],        # kbm: 1 - 4
                   ["Quickchat Placeholder",         # kbm: 2 - 1
                    "Quickchat Placeholder",         # kbm: 2 - 2
-                   "Quickchat Placeholder",         # kbm: 2 - 3        ****************
-                   "Quickchat Placeholder"],        # kbm: 2 - 4        NOTE: NO NUMBERS
-                  ["Quickchat Placeholder",         # kbm: 3 - 1        ****************
+                   "Quickchat Placeholder",         # kbm: 2 - 3        *************************
+                   "Quickchat Placeholder"],        # kbm: 2 - 4        NOTE: NO NUMBERS IN CHATS
+                  ["Quickchat Placeholder",         # kbm: 3 - 1        *************************
                    "Quickchat Placeholder",         # kbm: 3 - 2
                    "Quickchat Placeholder",         # kbm: 3 - 3
                    "Quickchat Placeholder"],        # kbm: 3 - 4
