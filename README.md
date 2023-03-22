@@ -14,6 +14,8 @@ With single scripts, all the code you need to make it work is on one file. With 
 
 ### With Single-Scripts:
 
+- Download Python on your computer, if you don't have it already.
+
 - Open the [single-scripts](https://github.com/vivaansinghvi07/rocket-league-custom-quickchats/tree/master/single-scripts) folder on the GitHub Repository. Depending on your platform, download either `controller.py` or `kbm.py`. Save this to your Downloads folder for convenience.
   - View [how to download a file from GitHub](https://www.gitkraken.com/learn/git/github-download#how-to-downlaod-a-file-from-github) if you need help.
 
@@ -25,7 +27,7 @@ With single scripts, all the code you need to make it work is on one file. With 
     ```
     python Downloads/diagnostic.py
     ```
-    - If your d-pad codes do not match, search for the `EDIT DPADS HERE` comment and change the codes as instructed
+    - If your d-pad codes do not match, search for the `EDIT DPADS HERE` comment and change the codes as instructed. Note: You only need to do this is you are playing with a controller. Otherwise, the `kbm.py` program needs little adjusting (other than quickchats themselves).
 
 - When you have everything set-up, open your Command Prompt
 - Copy paste the following command, assuming you put the file in your downloads folder:
