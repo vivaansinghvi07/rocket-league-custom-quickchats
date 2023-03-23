@@ -20,10 +20,6 @@ class Chat():
     # EDIT KEYBOARD CHAT BIND HERE
     chatbind = 't'
 
-    # EDIT DPADS HERE
-    dpad_x = "ABS_HAT0X"    # LEFT-RIGHT
-    dpad_y = "ABS_HAT0Y"    # UP-DOWN
-
     
 
 """""""""""""""""""""""""""""""""""""""""""""
