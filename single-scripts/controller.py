@@ -1,4 +1,4 @@
-class Chat():
+class Chat:
     ### EDIT QUICKCHATS HERE                        # THE COMBINATIONS FOR THE CHATS ARE SHOWN HERE:
     quickchats = [["Quickchat Placeholder",         # controller: up - up           
                    "Quickchat Placeholder",         # controller: up - left         
